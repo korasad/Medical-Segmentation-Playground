@@ -1,0 +1,12 @@
+# /home/korasad/Analis/webapp/backend/app/db/deps.py
+from typing import Generator
+
+from app.db.base import SessionLocal
+
+
+def get_db() -> Generator:
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
