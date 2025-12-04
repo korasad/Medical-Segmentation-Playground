@@ -6,6 +6,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: analis-backend
+    restart: unless-stopped
     ports:
       - "8000:8000"
     # Чтобы uploads/результаты и БД сохранялись на хосте
@@ -19,6 +20,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    restart: unless-stopped
     container_name: analis-frontend
     ports:
       - "5173:80"

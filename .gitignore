@@ -1,5 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+
+# Базы данных / промежуточные данные
+*.db
+*.sqlite3
+data/
+datasets/
+outputs/
+runs/
+logs/
+
+# Модели
+*.pt
+*.pth
+checkpoints/
+
+# Node / frontend
 node_modules/
 dist/
-.env
-__pycache__/
-*.pyc
+build/
+.vite/
+
+# IDE
+.vscode/
+.idea/
+
+# Прочее
+*.log
+.DS_Store
+
